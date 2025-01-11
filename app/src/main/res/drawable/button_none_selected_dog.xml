@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/cat_background_theme" /> <!-- Màu nền của ứng dụng -->
+    <stroke
+        android:width="3dp"
+        android:color="@android:color/white" /> <!-- Viền màu trắng -->
+    <corners android:radius="30dp" /> <!-- Bo tròn góc nếu cần -->
+</shape>

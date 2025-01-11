@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".presentation.UI.Activity.IntroActivity">
+
+
+    <ImageView
+        android:id="@+id/img_intro"
+        android:layout_width="426dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/img_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/comicsansms"
+        android:text="Hello Pets"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_intro_circle_red"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/img_intro_circle_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <ImageView
+        android:id="@+id/img_intro_hollow_circle_blue"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/img_intro_hollow_circle_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_intro">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_question_intro"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comicsansms"
+                android:gravity="center"
+                android:text="What help would you like to receive?"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_selection1"
+            android:layout_width="268dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_intro2_selected1" />
+
+        <ImageView
+            android:id="@+id/img_selection2"
+            android:layout_width="205.5dp"
+            android:layout_height="71dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_intro2_selected2" />
+
+        <ImageView
+            android:id="@+id/img_selection3"
+            android:layout_width="231dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_intro2_selected3" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_intro_circle_blue"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img_intro_circle_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_intro_hollow_circle_red"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="-18dp"
+        android:src="@drawable/img_intro_hollow_circle_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_intro_circle_blue_bottom"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="-38dp"
+        android:layout_marginEnd="-20dp"
+        android:src="@drawable/img_intro_circle_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

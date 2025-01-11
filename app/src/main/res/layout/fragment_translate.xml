@@ -1,0 +1,158 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/translate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEB94">
+
+    <Button
+        android:id="@+id/btn_cat"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/button_none_selected_cat"
+        android:fontFamily="@font/comicsansms"
+        android:text="Cat"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_dog"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/button_selected"
+        android:fontFamily="@font/comicsansms"
+        android:text="Dog"
+        android:textColor="#000000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/img_microphone_big"
+        android:layout_width="66.6dp"
+        android:layout_height="101.5dp"
+        android:layout_marginTop="226dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_microphone_big" />
+
+    <RelativeLayout
+        android:id="@+id/relative_text_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_microphone_big"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_microphone_big">
+
+        <TextView
+            android:id="@+id/text_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_rectangle_25"
+            android:fontFamily="@font/comicsansms"
+            android:padding="10dp"
+            android:text="@string/text_translate"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relative_text_translate">
+
+        <!-- LinearLayout chứa các nút -->
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <!-- Nút hình cô bé -->
+            <LinearLayout
+                android:layout_width="177dp"
+                android:layout_height="177dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_rectangle_25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_human_translate"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/human_image_translate"
+                    android:src="@drawable/img_human_record_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/comicsansms"
+                    android:gravity="center"
+                    android:text="Press to \n record voice"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Nút hình con chó -->
+            <LinearLayout
+                android:layout_width="177dp"
+                android:layout_height="177dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_rectangle_25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_dog_cat_translate"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/dog_image"
+                    android:src="@drawable/img_dog_record_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/comicsansms"
+                    android:gravity="center"
+                    android:text="Press to \n record voice"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_video"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="361dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_video" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

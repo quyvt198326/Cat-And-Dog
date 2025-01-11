@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cat&amp;DogApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_translate">Voice → Woof</string>
+    <string name="dog_image">Dog Image</string>
+    <string name="human_image_translate">Girl Image</string>
+</resources>
